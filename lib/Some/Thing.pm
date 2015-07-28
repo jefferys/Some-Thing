@@ -85,7 +85,7 @@ You can install the latest release of this module directly from GitHub using
 
 Older versions can be downloaded from the archive like:
 
-     $ cpanm git://github.com/Jefferys/Some-Thing.git@v0.0.1
+     $ cpanm git://github.com/Jefferys/Some-THing.git@v0.0.1
 
 but replacing the version string after the @ with the release's tag name.
 Hopefully there will never be a reason to need to do that. Old releases may not
@@ -94,11 +94,11 @@ all be available forever.
 =head2 Manual installation
 
 You can also install manually by selecting and downloading the F<*.tar.gz>
-package for any release on GitHub, i.e. for
+package for any release on GitHub, i.e. from
 
 =over 4
 
-L<https://github.com/Jefferys/Some-Thing/release>
+L<https://github.com/Jefferys/Some-Thing/releases>
 
 =back
 
@@ -106,7 +106,7 @@ Installing is then a matter of unzipping this, changing into the unzipped
 directory, and then executing the normal
 (L<ExtUtils::MakeMaker|ExtUtils::MakeMaker>) incantation:
 
-     perl Build.PL
+     perl Makefile.PL
      make
      make test
      make install
