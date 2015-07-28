@@ -1,31 +1,31 @@
 package Some::Thing;
 
-=for :stopwords DESC PARAM github zilla perl
-
-=cut
+#pod =for :stopwords DESC PARAM github zilla perl
+#pod
+#pod =cut
 
 # ABSTRACT: Just a skeleton
 
-=head1 SYNOPSIS
+#pod =head1 SYNOPSIS
+#pod
+#pod     use Some::Thing;
+#pod
+#pod     # Construct a Some::Thing object instance
+#pod     my $obj = Some::Thing->new();
+#pod
+#pod =cut
 
-    use Some::Thing;
-
-    # Construct a Some::Thing object instance
-    my $obj = Some::Thing->new();
-
-=cut
-
-=head1 DESCRIPTION
-
-Why do I exist? Who might use me? To do what?
-
-=cut
+#pod =head1 DESCRIPTION
+#pod
+#pod Why do I exist? Who might use me? To do what?
+#pod
+#pod =cut
 
 use 5.010;
 use strict;
 use warnings;
 
-# VERSION
+our $VERSION = '0.0.1'; # VERSION
 
 # Errors from caller context.
 use Carp;
@@ -42,21 +42,21 @@ $Params::Check::SANITY_CHECK_TEMPLATE = 0;
 
 Readonly::Scalar my $CLASS => 'Some::Thing';
 
-=classMethod new()
-
-    my $obj = Some::Thing->new();
-
-Creates and returns a Some::Thing object.
-
- PARAM:   N/A
-
- RETURNS: $obj
-The newly constructed object.
-
- ERRORS:
-Dies if not called as a class method.
-
-=cut
+#pod =classMethod new()
+#pod
+#pod     my $obj = Some::Thing->new();
+#pod
+#pod Creates and returns a Some::Thing object.
+#pod
+#pod  PARAM:   N/A
+#pod
+#pod  RETURNS: $obj
+#pod The newly constructed object.
+#pod
+#pod  ERRORS:
+#pod Dies if not called as a class method.
+#pod
+#pod =cut
 
 sub new {
 
@@ -74,6 +74,49 @@ sub new {
 }
 
 1;
+
+__END__
+
+=pod
+
+=encoding UTF-8
+
+=for :stopwords Stuart R. Jefferys DESC PARAM github zilla perl
+
+=head1 NAME
+
+Some::Thing - Just a skeleton
+
+=head1 VERSION
+
+version 0.0.1
+
+=head1 SYNOPSIS
+
+    use Some::Thing;
+
+    # Construct a Some::Thing object instance
+    my $obj = Some::Thing->new();
+
+=head1 DESCRIPTION
+
+Why do I exist? Who might use me? To do what?
+
+=head1 CLASS METHODS
+
+=head2 new()
+
+    my $obj = Some::Thing->new();
+
+Creates and returns a Some::Thing object.
+
+ PARAM:   N/A
+
+ RETURNS: $obj
+The newly constructed object.
+
+ ERRORS:
+Dies if not called as a class method.
 
 =head1 INSTALLATION
 
@@ -113,8 +156,6 @@ directory, and then executing the normal
 
 after which you are free to delete both the folder and the zipped file.
 
-=cut
-
 =head1 BUGS AND SUPPORT
 
 No known bugs are present in this release. Unknown bugs are a virtual
@@ -124,8 +165,6 @@ GitHub issue tracker associated with the development repository, at:
 L<https://github.com/Jefferys/Some-Thing/issues>
 
 Note: you must have a GitHub account to submit issues, but they are free.
-
-=cut
 
 =head1 DEVELOPMENT & CONTRIBUTION
 
@@ -137,5 +176,17 @@ only the Core perl build system (L<ExtUtils::MakeMaker|ExtUtil::MakeMaker>). All
 contributions are welcome.
 
 See F<development.md> on the development branch for more details.
+
+=head1 AUTHOR
+
+Stuart R. Jefferys <srjefferys@gmail.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2015 by Stuart R. Jefferys.
+
+This is free software, licensed under:
+
+  The Apache License, Version 2.0, January 2004
 
 =cut
