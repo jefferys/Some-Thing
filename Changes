@@ -1,24 +1,5 @@
 Revision history for Some-Thing
 
-{{$NEXT}}
-  [ API CHANGE ]
-
-  [ BREAKING CHANGE ]
-
-  [ BUG FIXES ]
-
-  [ DOCUMENTATION ]
-
-  [ ENHANCEMENTS ]
-
-  [ FEATURE ]
-
-  [ MAJOR ]
-
-  [ MINOR ]
-
-  [ REVISION ]
-
 0.0.2 2015-07-28
   [ DOCUMENTATION ]
     - Fixed bugs in main module install documentation

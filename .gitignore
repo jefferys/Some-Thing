@@ -1,9 +1,0 @@
-# OS
-.DS_Store
-
-# Build
-Some-Thing*
-Some-Thing.tar.gz
-.build
-.tidyall.d
-cover_db
